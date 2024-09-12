@@ -40,7 +40,7 @@ public:
     void displayProduct() const {
         cout << setw(15) << prodID 
              << setw(15) << prodName 
-             << setw(10) << fixed << setprecision(1) << prodPrice 
+             << setw(10) << fixed << setprecision(2) << prodPrice 
              << endl;
     }
 
@@ -48,7 +48,7 @@ public:
     void displayCartItem() const {
         cout << setw(15) << prodID 
              << setw(15) << prodName 
-             << setw(10) << fixed << setprecision(1) << prodPrice 
+             << setw(10) << fixed << setprecision(2) << prodPrice 
              << setw(13) << cartQty 
              << endl;
     }
@@ -65,15 +65,15 @@ public:
 class Inventory {
 private:
     vector<Product> products = {
-        {"ABC", "Apple", 250.0},
-        {"DEF", "Banana", 150.0},
-        {"GHI", "Strawberry", 330.0},
-        {"JKL", "Grapes", 200.0},
-        {"MNO", "Mango", 399.0},
-        {"PQR", "Orange", 350.0},
-        {"STU", "Watermelon", 240.0},
-        {"VWX", "Melon", 190.0},
-        {"YZ", "Pineapple", 299.0},
+        {"ABC", "Bond Paper", 55.0},
+        {"DEF", "Pencil", 10.0},
+        {"GHI", "Notebook", 75.0},
+        {"JKL", "Ballpen", 15.0},
+        {"MNO", "Marker", 50.0},
+        {"PQR", "Glue", 29.75},
+        {"STU", "Highlighter", 45.0},
+        {"VWX", "Yellow Pad", 55.0},
+        {"YZ", "Sketch Book", 189.99},
         
     };
 
@@ -187,7 +187,7 @@ int main() {
         system("CLS"); 
 
         // Display the menu
-        cout << "\t   SHOP\n\n";
+        cout << "\t   STATIONERY\n\n";
         cout << "  1. View Products\n";
         cout << "  2. View Shopping Cart\n";
         cout << "  3. View Orders\n";
